@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.29)
-project(BasicTutorial)
+project(GST-Tutorial)
 set(CMAKE_CXX_STANDARD 20)
 
 find_package(PkgConfig REQUIRED)
