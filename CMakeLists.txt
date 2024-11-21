@@ -20,3 +20,5 @@ target_link_libraries(basic-tutorial-3 ${GSTREAMER_LIBRARIES})
 add_executable(basic-tutorial-4 basic-tutorial-4.cpp)
 target_link_libraries(basic-tutorial-4 ${GSTREAMER_LIBRARIES})
 
+add_executable(basic-tutorial-5 basic-tutorial-5.cpp)
+target_link_libraries(basic-tutorial-5 ${GSTREAMER_LIBRARIES})
