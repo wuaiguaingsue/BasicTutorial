@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.22)
 project(GST-Tutorial)
 set(CMAKE_CXX_STANDARD 20)
 
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0)
+pkg_check_modules(GSTREAMER REQUIRED gstreamer-1.0 gstreamer-app-1.0 gstreamer-audio-1.0)
 
 include_directories(${GSTREAMER_INCLUDE_DIRS})
 link_directories(${GSTREAMER_LIBRARY_DIRS} /usr/local/lib)
@@ -31,3 +31,6 @@ target_link_libraries(basic-tutorial-7 ${GSTREAMER_LIBRARIES})
 
 add_executable(basic-tutorial-8 basic-tutorial-8.cpp)
 target_link_libraries(basic-tutorial-8 ${GSTREAMER_LIBRARIES})
+
+add_executable(basic-tutorial-9 basic-tutorial-9.cpp)
+target_link_libraries(basic-tutorial-9 ${GSTREAMER_LIBRARIES})
